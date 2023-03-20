@@ -24,10 +24,3 @@ class Chatbot:
         ).choices[0].text
 
         return api_response
-
-
-if __name__ == "__main__":
-    chatbot = Chatbot()
-    query = "Write a joke about birds"
-    response = chatbot.get_response(query)
-    print(response)

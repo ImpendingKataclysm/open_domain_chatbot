@@ -43,5 +43,10 @@ class ChatbotWindow(QMainWindow):
         thread.start()
 
     def get_bot_response(self, user_input):
+        """
+        Gets a response from the chatbot based on the user's input
+        :param user_input: the text entered by the user into the input field
+        :return: None
+        """
         response = self.chatbot.get_response(user_input)
         self.chat_area.append(f"<p style='color:#333'>Chatbot: {response}</p>")
