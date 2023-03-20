@@ -2,6 +2,9 @@ from PyQt6.QtWidgets import QMainWindow, QTextEdit, QLineEdit, QPushButton
 
 
 class ChatbotWindow(QMainWindow):
+    """
+    Graphical user interface for the chatbot app
+    """
     def __init__(self):
         super().__init__()
         self.setMinimumSize(700, 500)
